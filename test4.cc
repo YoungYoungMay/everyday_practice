@@ -29,6 +29,8 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
         tail = tail->next;
         flag = ret/10;
     }
+    //这句很重要!!!!!!!
+    //这是链表最后一个节点相加之后产生的进位，此时新链表比给的链表长
     if(flag != 0)
         tail->next = new ListNode(flag);
     return head->next;
