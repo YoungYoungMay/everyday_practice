@@ -7,6 +7,9 @@ vector<int> clockwisePrint(vector<vector<int> > mat, int n, int m)//矩阵是n*m
         return res;
     int start_x = 0;
     int start_y = 0;
+    ////下面两行是针对没有给矩阵的行列，只给了vector，自己求行列
+    //int end_x = matrix.size()-1;
+    //int end_y = matrix[0].size()-1;
     int end_x = n - 1;
     int end_y = m - 1;
     while(start_x<=end_x && start_y<=end_y)
